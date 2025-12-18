@@ -26,7 +26,7 @@ const experiences: ExperienceItem[] = [
       'Relevant coursework: Data Structures & Algorithms, Web Development, Database Management,AI/ML Implementations , Cloud Computing',
       'Active participant in coding competitions and hackathons'
     ],
-    technologies: ['Python', 'Java', 'C++', 'JavaScript', 'React', 'Node.js','NLP,'AI/ML Algorithms','Cloud Computing'],
+    technologies: ['Python', 'Java', 'C++', 'JavaScript', 'React', 'Node.js','NLP','AI/ML Algorithms','Cloud Computing'],
     type: 'education'
   },
   {
