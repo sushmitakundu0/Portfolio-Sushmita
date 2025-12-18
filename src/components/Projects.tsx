@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ImageWithFallback } from './figma/ImageWithFallback';
 import { Card } from './ui/card';
 import { Badge } from './ui/badge';
 import { Button } from './ui/button';
@@ -25,7 +24,7 @@ const projects: Project[] = [
     id: 1,
     title: "EcoTracker Dashboard",
     description: "A comprehensive environmental impact tracking application with data visualization.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXRhJTIwdmlzdWFsaXphdGlvbiUyMGRhc2hib2FyZHxlbnwxfHx8fDE3NTY2NTU0NjN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXRhJTIwdmlzdWFsaXphdGlvbiUyMGRhc2hib2FyZHxlbnwxfHx8fDE3NTY2NTU0NjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
     tags: ["React", "TypeScript", "Chart.js", "Node.js"],
     longDescription: "EcoTracker is a full-stack web application designed to help individuals and organizations monitor their environmental impact. The dashboard provides real-time insights into carbon footprint, waste generation, and resource consumption.",
     features: [
@@ -43,7 +42,7 @@ const projects: Project[] = [
     id: 2,
     title: "StudyBuddy Mobile App",
     description: "A collaborative study platform connecting students for group learning sessions.",
-    image: "https://images.unsplash.com/photo-1618761714954-0b8cd0026356?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBkZXNpZ24lMjBpbnRlcmZhY2V8ZW58MXx8fHwxNzU2NzMwNDc4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    image: "https://images.unsplash.com/photo-1618761714954-0b8cd0026356?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBkZXNpZ24lMjBpbnRlcmZhY2V8ZW58MXx8fHwxNzU2NzMwNDc4fDA&ixlib=rb-4.1.0&q=80&w=1080",
     tags: ["React Native", "Firebase", "UI/UX"],
     longDescription: "StudyBuddy is a mobile application that connects students based on their study preferences, subjects, and schedules. It facilitates group formation for collaborative learning and provides tools for effective study sessions.",
     features: [
@@ -61,7 +60,7 @@ const projects: Project[] = [
     id: 3,
     title: "Portfolio Website",
     description: "A modern, responsive portfolio website showcasing creative development work.",
-    image: "https://images.unsplash.com/photo-1649451844931-57e22fc82de3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXZlbG9wbWVudCUyMHByb2plY3QlMjBtb2NrdXB8ZW58MXx8fHwxNzU2NzEyNTEzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    image: "https://images.unsplash.com/photo-1649451844931-57e22fc82de3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXZlbG9wbWVudCUyMHByb2plY3QlMjBtb2NrdXB8ZW58MXx8fHwxNzU2NzEyNTEzfDA&ixlib=rb-4.1.0&q=80&w=1080",
     tags: ["Next.js", "Framer Motion", "Tailwind"],
     longDescription: "A modern portfolio website built with performance and user experience in mind. Features smooth animations, responsive design, and optimized loading for the best user experience.",
     features: [
@@ -112,7 +111,7 @@ export function Projects() {
                 onClick={() => setSelectedProject(project)}
               >
                 <div className="relative overflow-hidden">
-                  <ImageWithFallback
+                  <img
                     src={project.image}
                     alt={project.title}
                     className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
@@ -167,7 +166,7 @@ export function Projects() {
                     <X size={20} />
                   </button>
                   
-                  <ImageWithFallback
+                  <img
                     src={selectedProject.image}
                     alt={selectedProject.title}
                     className="w-full h-64 object-cover rounded-t-lg"
