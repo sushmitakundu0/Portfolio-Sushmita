@@ -90,9 +90,29 @@ const projects: Project[] = [
       "Tailwind CSS",
       "Vite"
     ],
-    githubUrl: "#",
-    liveUrl: "#"
+    githubUrl: "https://github.com/sushmitakundu0/Portfolio-Sushmita/tree/main",
+    liveUrl: "https://portfolio-sushmita.vercel.app/"
   }
+  {
+  id: 4,
+  title: "TaskFlow – Task Management",
+  description: "A task and productivity management app to organize work, teams, and deadlines.",
+  image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?crop=entropy&cs=tinysrgb&fit=max&w=1080&q=80",
+  tags: ["Frontend", "UI/UX", "Productivity"],
+  longDescription:
+    "TaskFlow is a task management web application designed to help users organize tasks, set priorities, and track progress efficiently. It features a clean layout and intuitive UI for better productivity and collaboration.",
+  features: [
+    "Task creation and editing",
+    "Drag-and-drop task organization",
+    "Status tracking (To-Do, In Progress, Completed)",
+    "Responsive and accessible UI",
+    "Clean and modern design"
+  ],
+  techStack: ["React", "TypeScript", "Tailwind CSS", "JavaScript"],
+  githubUrl: "https://github.com/TEKURU-ZENO/TaskFlow-TaskManagement",
+  liveUrl: "https://task-flow-task-management.vercel.app/"
+}
+
 ];
 
 export function Projects() {
