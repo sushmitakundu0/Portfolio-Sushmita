@@ -92,7 +92,7 @@ const projects: Project[] = [
     ],
     githubUrl: "https://github.com/sushmitakundu0/Portfolio-Sushmita/tree/main",
     liveUrl: "https://portfolio-sushmita.vercel.app/"
-  }
+  },
   {
   id: 4,
   title: "TaskFlow – Task Management",
