@@ -24,7 +24,7 @@ const projects: Project[] = [
     id: 1,
     title: "BioGPT-DDI (Team Project)",
     description: "An AI-powered system for predicting drug–drug interactions using biomedical language models.",
-    image: "https://images.unsplash.com/photo-1581092334554-6c1377f74b8e?w=1080&q=80",
+    image: "image: "https://images.unsplash.com/photo-1581091012184-3c37c8e4f9ee?crop=entropy&cs=tinysrgb&fit=max&w=1080&q=80",
     tags: ["AI/ML", "NLP", "Healthcare", "Team Project"],
     longDescription:
       "BioGPT-DDI is a collaborative AI research project focused on predicting drug–drug interactions using biomedical NLP models. The system leverages domain-specific language models to analyze drug pairs and generate interaction insights through a user-friendly web interface.",
@@ -67,7 +67,7 @@ const projects: Project[] = [
       "Tailwind CSS"
     ],
     githubUrl: "https://github.com/TEKURU-ZENO/SwanBotanicalsUI",
-    liveUrl: "https://swanbotanicalsui.vercel.app"
+    liveUrl: "https://swan-botanicals-ui.vercel.app/"
   },
   {
     id: 3,
