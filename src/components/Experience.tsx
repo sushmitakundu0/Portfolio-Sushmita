@@ -10,52 +10,52 @@ interface ExperienceItem {
   period: string;
   description: string[];
   technologies: string[];
-  type: 'schooling' | 'education' | 'project';
+  type: 'schooling' | 'education';
   link?: string;
 }
 
 const experiences: ExperienceItem[] = [
   {
     id: '1',
-    title: 'BTech Computer Science & Engineering',
+    title: 'B Tech Computer Science & Engineering',
     company: 'SRM Institute of Science and Technology',
     location: 'Chennai, India',
-    period: '2022 - 2026',
+    period: '2023 - 2027',
     description: [
       'Pursuing Bachelor of Technology in Computer Science and Engineering',
-      'Relevant coursework: Data Structures, Algorithms, Web Development, Database Management',
+      'Relevant coursework: Data Structures & Algorithms, Web Development, Database Management,AI/ML Implementations , Cloud Computing',
       'Active participant in coding competitions and hackathons'
     ],
-    technologies: ['Python', 'Java', 'C++', 'JavaScript', 'React', 'Node.js'],
+    technologies: ['Python', 'Java', 'C++', 'JavaScript', 'React', 'Node.js','NLP,'AI/ML Algorithms','Cloud Computing'],
     type: 'education'
   },
   {
     id: '2',
     title: 'Higher Secondary Education (12th)',
-    company: 'XYZ Senior Secondary School',
-    location: 'Chennai, India',
+    company: 'St. Agnes Convent School',
+    location: 'Kolkata, India',
     period: '2020 - 2022',
     description: [
       'Completed higher secondary education with focus on Science stream',
       'Studied Physics, Chemistry, Mathematics, and Computer Science',
       'Achieved excellent academic performance and developed strong analytical skills'
     ],
-    technologies: ['Mathematics', 'Physics', 'Chemistry', 'Computer Science', 'C++'],
+    technologies: ['Mathematics', 'Physics', 'Chemistry', 'Computer Science'],
     type: 'schooling'
   },
   {
     id: '3',
-    title: 'Open Source Contributor',
-    company: 'Various Projects',
-    location: 'Remote',
-    period: '2023 - Present',
+    title: 'Secondary Education (Class X)',
+    company: 'Agrasain Balika Siksha Sadan',
+    location: 'Kolkata , India',
+    period: '2020 - 2021',
     description: [
-      'Contributing to open source projects on GitHub',
-      'Collaborating with developers worldwide on innovative solutions',
-      'Learning best practices in software development and version control'
-    ],
-    technologies: ['Git', 'GitHub', 'JavaScript', 'Python', 'Documentation'],
-    type: 'project'
+    'Completed secondary education with a strong foundation in core academic subjects',
+    'Developed analytical thinking, problem-solving skills, and logical reasoning',
+    'Actively participated in academic and extracurricular activities'
+  ],
+    technologies: ['Mathematics', 'Physics', 'Chemistry', 'English', 'Computer Science'],
+    type: 'schooling'
   }
 ];
 
@@ -68,7 +68,6 @@ const typeColors = {
 const typeIcons = {
   schooling: '📚',
   education: '🎓',
-  project: '🚀'
 };
 
 function ExperienceCard({ experience, index }: { experience: ExperienceItem; index: number }) {
